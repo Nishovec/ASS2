@@ -16,5 +16,13 @@ public class MyArrayList<E> implements MyList<E> {
             elements = newElements;
         }
         elements[size] = element;
+        size++;
+    }
+    public E get(int index) {
+        if (index < 0) || index >= size) {
+    throw new IndexOutOfBoundsException();
+        }
+        return(E) elements[index];
+
     }
 }
